@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+        <link rel="stylesheet" href="css/estilo.css" />
+	<title>	Cifrado </title>
+</head>
+<body background="img/fondo.jpg" >
+
+<div id="main_wrapper">
+            <header >
+                <div id="main_title" >
+                   
+                    <h1><center>Cifrado Vigenere</center></h1>
+                    
+                </div>
+                
+        
+            </header>
+            
+           <br>
+           <br>
+
+
+             <section>
+               
+                <aside>
+                    <h1>¿En qué consiste?</h1>
+                    
+                    
+                    <p>Es un criptosistema simétrico, es decir, utiliza la misma clave para cifrar y descifrar. El cifrado Vigenère se asemeja mucho al cifrado César, pero su diferencia radica en que el primero utiliza una clave más larga para contrarrestar el gran problema del cifrado César: el hecho de que una letra sólo puede ser codificada de una forma. Para resolver este problema, se utiliza una palabra clave en lugar de un carácter simple.</p>
+
+
+                    
+                </aside>
+                 <article>
+                 <center>
+                     <br>
+                    <label>Ingrese el texto a cifrar o descifrar:</label>
+                   <input type="text" id="mensaje"  style="text-transform: uppercase;">
+                    <br><br>
+                    <label>Clave:</label>
+                    <input type="text"  id="clave" style="text-transform: uppercase;"><br><br>
+                    <input type="button" value="Cifrar"  id="cifrar"  onclick="RebuildString(Encriptar(true))">
+                    <input type="button" value="Descifrar" id="descifrar"  onclick="RebuildString(Encriptar(false))" >  
+                    <br><br>
+                    <label>Resultado cifrado/descifrado:</label>
+                    <textarea  id="resultado" rows="5"></textarea></form>
+                      
+                 </center> 
+                </article>
+            </section>
+            <br><br><br>
+
+            <footer>
+
+            	<h4>Desarrollado por Martínez González Andrea Daniela</h4>
+               
+            </footer>
+        </div>
+        <script src="js/vigi.js" > </script>
+</body>
+</html>
